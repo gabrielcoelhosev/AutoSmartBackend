@@ -1,4 +1,4 @@
-name: postgres-cashback
+name: postgres-autosmart
 
 services:
   db:

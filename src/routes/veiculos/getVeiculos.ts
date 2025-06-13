@@ -4,6 +4,7 @@ import postgresHelper from '../helpers/postgresHelper';
 
 export async function getVeiculos(req: Request, res: Response) {
 
+
     const query: QueryConfig = {
         text: `
             SELECT * FROM veiculos
