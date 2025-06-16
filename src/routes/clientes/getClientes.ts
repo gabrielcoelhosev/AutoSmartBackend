@@ -1,12 +1,13 @@
 import { Request, Response } from 'express';
 import { QueryConfig } from 'pg';
-import postgresHelper from '../helpers/postgresHelper';
+import postgresHelper from '../../helpers/postgresHelper';
 
 export async function getClientes(req: Request, res: Response) {
 
     const query: QueryConfig = {
         text: `
             SELECT * FROM clientes
+            ORDER BY id_cliente DESC
         `
     }
 

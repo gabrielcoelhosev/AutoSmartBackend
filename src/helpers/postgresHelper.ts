@@ -1,5 +1,5 @@
 import { Pool, QueryConfig } from 'pg';
-import { env } from '../../env';
+import { env } from '../env'
 
 const pool = new Pool({
   connectionString: env.DATABASE_URL,

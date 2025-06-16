@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { QueryConfig } from "pg";
 import z from 'zod';
-import postgresHelper from "../helpers/postgresHelper";
+import postgresHelper from "../../helpers/postgresHelper";
 
 const bodySchema = z.object({
     nome: z.string(),
