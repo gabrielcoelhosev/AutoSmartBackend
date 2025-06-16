@@ -24,3 +24,19 @@ CREATE TABLE public.clientes (
 
 ALTER TABLE public.clientes
   ADD COLUMN data_nascimento TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL;
+
+  --------------- SQL ---------------
+
+ALTER TABLE public.veiculos
+  ADD COLUMN disponivel BOOLEAN DEFAULT TRUE NOT NULL;
+
+--------------- SQL ---------------
+
+CREATE TABLE public.tags (
+  id_tag SERIAL NOT NULL,
+  descricao VARCHAR(25) NOT NULL UNIQUE,
+  PRIMARY KEY(id_tag)
+) ;
+
+ALTER TABLE public.tags
+  ALTER COLUMN descricao SET STATISTICS 0;
