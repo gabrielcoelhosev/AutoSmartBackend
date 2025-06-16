@@ -12,6 +12,8 @@ export async function getTags(req: Request, res: Response) {
         values: []
     }
 
+    console.log('chegou')
+
     const tags = await postgresHelper.sql(query);
 
     if(tags.erro){
