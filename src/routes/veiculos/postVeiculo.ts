@@ -36,7 +36,7 @@ export async function postVeiculo(req: Request, res: Response) {
         throw new Error('Erro ao cadastrar veículo');
     }
 
-    res.status(200).json({
-        dados: 'Veículo cadastrado com sucésso'
+    res.status(201).json({
+        dados: `Veículo ${modelo} cadastrado com sucésso`
     });
 }
